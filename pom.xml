@@ -9,6 +9,7 @@
     
     <modules>
         <module>Algoritmo1</module>
+        <module>Algoritmo2</module>
     </modules>
     
     <build>
