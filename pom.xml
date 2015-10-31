@@ -8,7 +8,7 @@
     <name>Algoritmos Construcao de Software</name>
     
     <modules>
-        
+        <module>Algoritmo1</module>
     </modules>
     
     <build>
