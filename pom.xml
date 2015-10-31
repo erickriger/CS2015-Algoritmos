@@ -10,6 +10,7 @@
     <modules>
         <module>Algoritmo1</module>
         <module>Algoritmo2</module>
+        <module>Algoritmo3</module>
     </modules>
     
     <build>
