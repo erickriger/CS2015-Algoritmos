@@ -13,6 +13,7 @@
         <module>Algoritmo3</module>
         <module>Algoritmo4</module>
         <module>Algoritmo5</module>
+        <module>algoritmo7</module>
     </modules>
     
     <build>
