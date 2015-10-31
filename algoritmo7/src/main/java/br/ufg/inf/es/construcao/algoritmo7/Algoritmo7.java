@@ -11,6 +11,7 @@ public class Algoritmo7 {
      * @param n Numero maior oou igual a zero e menor ou igual a 9999.
      * @return  true se possuir a propriedade, 
      *          false se nao possuir a propriedade.
+     * @throws IllegalArgumentException Se o parametro for invalido.
      */
     public static boolean propriedade3025(int n) {
         if (n < 0 || n > 9999) {
