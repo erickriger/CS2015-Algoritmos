@@ -1,36 +1,9 @@
 package br.ufg.inf.es.construcao.algoritmo4;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author eric
- */
 public class Algoritmo4Test {
-    
-    public Algoritmo4Test() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
     @Test(expected = IllegalArgumentException.class)
     public void testAMenorQueZero() {
@@ -45,10 +18,7 @@ public class Algoritmo4Test {
         int b = -1;
         Algoritmo4.produto(a, b);
     }
-    
-    /**
-     * Test of produto method, of class Algoritmo4.
-     */
+
     @Test
     public void testProduto() {
         int a = 5;

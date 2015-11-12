@@ -1,37 +1,10 @@
 package br.ufg.inf.es.construcao.algoritmo10;
 
-import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Assert;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
-/**
- *
- * @author eric
- */
 public class Algoritmo10Test {
     
-    public Algoritmo10Test() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
     @Test(expected = IllegalArgumentException.class)
     public void testNMenorQue2() {
         Algoritmo10.crivoEratostenes(null, 1);
@@ -65,5 +38,5 @@ public class Algoritmo10Test {
         Assert.assertEquals(0, a[17]);
         Assert.assertEquals(0, a[31]);
     }
-
+    
 }

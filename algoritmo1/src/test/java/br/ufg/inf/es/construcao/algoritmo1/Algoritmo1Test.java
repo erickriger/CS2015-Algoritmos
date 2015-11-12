@@ -1,37 +1,10 @@
 package br.ufg.inf.es.construcao.algoritmo1;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- * 
- * @author eric
- */
 public class Algoritmo1Test {
-    
-    public Algoritmo1Test() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-    
+
     @Test(expected = IllegalArgumentException.class)
     public void testDiaMenorQueUm() {
         int d = 0;
@@ -39,7 +12,7 @@ public class Algoritmo1Test {
         int a = 1753;
         Algoritmo1.diaSemana(d, m, a);
     }
-    
+
     @Test(expected = IllegalArgumentException.class)
     public void testDiaMaiorQue31() {
         int d = 32;
@@ -47,7 +20,7 @@ public class Algoritmo1Test {
         int a = 1753;
         Algoritmo1.diaSemana(d, m, a);
     }
-    
+
     @Test(expected = IllegalArgumentException.class)
     public void testMesMenorQueUm() {
         int d = 1;
@@ -55,7 +28,7 @@ public class Algoritmo1Test {
         int a = 1753;
         Algoritmo1.diaSemana(d, m, a);
     }
-    
+
     @Test(expected = IllegalArgumentException.class)
     public void testMesMaiorQue12() {
         int d = 1;
@@ -63,7 +36,7 @@ public class Algoritmo1Test {
         int a = 1753;
         Algoritmo1.diaSemana(d, m, a);
     }
-    
+
     @Test(expected = IllegalArgumentException.class)
     public void testAnoMenorQue1753() {
         int d = 1;
@@ -76,7 +49,7 @@ public class Algoritmo1Test {
     public void testDiaSemana() {
         int d = 26;
         int m = 12;
-        int a = 2015;       
+        int a = 2015;
         double expResult = 5.0;
         double result = Algoritmo1.diaSemana(d, m, a);
         assertEquals(expResult, result, 0.0);

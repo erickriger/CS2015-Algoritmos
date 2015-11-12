@@ -9,14 +9,16 @@ public class Algoritmo10 {
 
     /**
      * Calcula se um numero e primo de acordo com o crivo de Eratostenes.
+     *
      * @param a Vetor para calculo, deve ter tamanho maior que 'n'.
-     * @param n Numero que se deseja descobrir se e primo, deve ser maior
-     *          ou igual a 2.
+     * @param n Numero que se deseja descobrir se e primo, deve ser maior ou
+     * igual a 2.
      * @throws IllegalArgumentException Se algum parametro for invalido.
      */
-    public static void crivoEratostenes(int a[], int n) {
+    public static void crivoEratostenes(int[] a, int n) {
         if (n < 2) {
-            throw new IllegalArgumentException("O 'n' deve ser maior ou igual a 2.");
+            throw new IllegalArgumentException("O 'n' deve ser maior ou igual"
+                    + " a 2.");
         }
 
         if (a.length < (n + 1)) {
