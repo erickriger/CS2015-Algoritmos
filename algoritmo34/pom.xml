@@ -6,7 +6,7 @@
         <artifactId>algoritmos</artifactId>
         <version>1.0</version>
     </parent>
-    <artifactId>algoritmo33</artifactId>
+    <artifactId>algoritmo34</artifactId>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

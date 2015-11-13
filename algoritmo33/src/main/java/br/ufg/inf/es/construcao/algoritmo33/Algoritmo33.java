@@ -1,7 +1,5 @@
 package br.ufg.inf.es.construcao.algoritmo33;
 
-import br.ufg.inf.es.construcao.algoritmo27.Algoritmo27;
-
 /**
  * Verificador de CPF 1.
  *
@@ -25,16 +23,16 @@ public class Algoritmo33 {
                     + "11 digitos.");
         }
 
-        int somaVerif1 = digitos[1] + 2 * digitos[2] + 3 * digitos[3]
+        int somaVerif1 = digitos[0] + 2 * digitos[1] + 3 * digitos[2]
+                + 4 * digitos[3] + 5 * digitos[4] + 6 * digitos[5]
+                + 7 * digitos[6] + 8 * digitos[7] + 9 * digitos[8];
+
+        int somaVerif2 = digitos[1] + 2 * digitos[2] + 3 * digitos[3]
                 + 4 * digitos[4] + 5 * digitos[5] + 6 * digitos[6]
                 + 7 * digitos[7] + 8 * digitos[8] + 9 * digitos[9];
 
-        int somaVerif2 = digitos[2] + 2 * digitos[3] + 3 * digitos[4]
-                + 4 * digitos[5] + 5 * digitos[6] + 6 * digitos[7]
-                + 7 * digitos[8] + 8 * digitos[9] + 9 * digitos[10];
-
-        int verif1 = Algoritmo27.mod(Algoritmo27.mod(somaVerif1, 11), 10);
-        int verif2 = Algoritmo27.mod(Algoritmo27.mod(somaVerif2, 11), 10);
+        int verif1 = (somaVerif1 % 11) % 10;
+        int verif2 = (somaVerif2 % 11) % 10;
 
         return verif1 == digitos[9] && verif2 == digitos[10];
     }
